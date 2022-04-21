@@ -54,7 +54,7 @@
         <section class="section hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button> 
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button> 
             </div>
         </section>
         <!-- Секция Особенности -->
@@ -106,9 +106,24 @@
             <div class="container">
                 <h2 class="product-title">Чем мы занимаемся</h2>
                 <ul class="product list">
-                    <li class="product-item"><img src="./images/box1.jpg" alt="Монитор" width="370"/></li>
-                    <li class="product-item"> <img src="./images/box2.jpg" alt="Телефон" width="370"/></li>
-                    <li class="product-item"> <img src="./images/box3.jpg" alt="Планшет" width="370"/></li>
+                    <li class="product-item">
+                        <div class="product-thumb">
+                            <img src="./images/box1.jpg" alt="Монитор" width="370"/>
+                            <h3 class="caption">Десктопные приложения</h3>
+                        </div>
+                    </li>
+                    <li class="product-item">
+                        <div class="product-thumb">
+                            <img src="./images/box2.jpg" alt="Телефон" width="370"/>
+                            <h3 class="caption">Мобильные приложения</h3>
+                        </div>
+                    </li>   
+                    <li class="product-item">
+                        <div class="product-thumb">
+                            <img src="./images/box3.jpg" alt="Планшет" width="370"/>
+                            <h3 class="caption">Дизайнерские решения</h3>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -370,5 +385,11 @@
     
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+        <button class="modal-button" data-modal-close>&times;</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
